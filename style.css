@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+CA:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(22, 22, 19, 1) 0%, rgba(64, 42, 18, 1) 100%);
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 4%;
+    
+}
+
+.links{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    font-weight: 350;
+    flex-direction: row;
+    gap: 45px;    
+    padding-right: 80px;
+
+}
+
+.logo{
+    height: 40px;
+    width: 100px;
+    
+}
+
+nav a{
+    color: #E5DBD9;
+}
+
+.Title{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #E5DBD9;
+    justify-content:space-between ;
+    
+    align-content: center;
+    
+}
+
+.muie{
+   height: 980px;
+   width:  850px;
+}
+
+.p_title{
+    padding: 190px;
+    padding-right: 150px;
+    
+    
+}
+
+.p1{
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 60px;
+    color: #161613;
+}
+.p2{
+    font-family: "Playwrite CA", cursive;
+    color: #505045;
+}
+.botao{
+    width: 280px;
+    height: 70px;
+    margin: 40px;
+    font-family: "Smooch Sans", sans-serif;
+    margin-left: 0px;
+    border: 0px;
+    color: #E5DBD9;
+    font-size: 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,rgb(45, 14, 5) 0%, rgba(64, 42, 18, 1) 100%);
+
+}
+
+.Pe{
+    background: linear-gradient(90deg,rgba(22, 22, 19, 1) 0%, rgba(64, 42, 18, 1) 100%);
+}
+
+.rodape{
+    display: flex;
+    padding: 5px;
+    color: #E5DBD9;
+    font-family: "Playwrite CA", cursive;
+    
+    justify-content: center;
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-around;
+    gap: 600px;
+    color: #E5DBD9;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.instaF{
+    height: 30px;
+    width: 30px;
+}
+.whatsF{
+    height: 40px;
+    width: 40px;
+}
+.insta_F{
+    align-items: center;
+    display: flex;
+}
+.ctt_F{
+    align-items: center;
+    display: flex;
+}
