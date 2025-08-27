@@ -36,6 +36,8 @@
 
 nav a{
     color: #E5DBD9;
+    text-decoration: none;
+    position: relative;
 }
 
 .Title{
@@ -48,9 +50,16 @@ nav a{
     
 }
 
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{ opacity: 1;}
+}
+
 .muie{
    height: 980px;
    width:  850px;
+   opacity: 1;
+   animation: fadeIn 2.5s ease-in-out;
 }
 
 .p_title{
@@ -75,11 +84,14 @@ nav a{
     margin: 40px;
     font-family: "Smooch Sans", sans-serif;
     margin-left: 0px;
-    border: 0px;
+    border: 6px;
+    border-color: #161613;
     color: #E5DBD9;
     font-size: 40px;
     border-radius: 20px;
-    background: linear-gradient(90deg,rgb(45, 14, 5) 0%, rgba(64, 42, 18, 1) 100%);
+    background-color: #552910; 
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -92,14 +104,16 @@ nav a{
     padding: 5px;
     color: #E5DBD9;
     font-family: "Playwrite CA", cursive;
-    
+    font-size: 15px;
+    font-weight: 200;
+    padding-bottom: 0px;
     justify-content: center;
 }
 
 .contatos{
     display: flex;
-    justify-content: space-around;
-    gap: 600px;
+    justify-content: center;
+    gap: 10px;
     color: #E5DBD9;
     font-family: "Roboto Condensed", sans-serif;
 }
@@ -107,9 +121,9 @@ nav a{
     height: 30px;
     width: 30px;
 }
-.whatsF{
-    height: 40px;
-    width: 40px;
+.emailF{
+    height: 22px;
+    width: 27px;
 }
 .insta_F{
     align-items: center;
@@ -119,3 +133,45 @@ nav a{
     align-items: center;
     display: flex;
 }
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #E5DBD9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.botao span{
+    position: relative;
+}
+
+.botao span a{
+    color: #E5DBD9;
+}
+
+.botao::before{
+    content: '';
+    background-color: #805532;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+}
+
+.botao:hover::before{
+    width: 1000px;
+    height: 1000px;
+}
+
